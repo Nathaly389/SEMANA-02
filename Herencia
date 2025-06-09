@@ -1,0 +1,16 @@
+class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    def saludar(self):
+        print(f"Hola, soy {self.nombre}")
+
+# Clase hija
+class Estudiante(Persona):
+    def estudiar(self):
+        print(f"{self.nombre} está estudiando")
+
+# Uso
+alumna = Estudiante("Nathaly")
+alumna.saludar()
+alumna.estudiar()
